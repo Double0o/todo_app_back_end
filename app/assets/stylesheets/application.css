@@ -15,7 +15,7 @@
  */
 h1{color: purple;
     
-border: 5px dashed purple;
+border: 5px solid purple;
   background: #00ff00 url("smiley.gif") no-repeat fixed center;  
 }
 html{font-family: sans-serif;}
@@ -26,4 +26,8 @@ ul {
 
 ul{ 
     background: #00ff00 url("smiley.gif") no-repeat fixed center; 
+}
+h2{color:  purple ;}
+html{font-family: sans-serif;
+    background-color: green;
 }
