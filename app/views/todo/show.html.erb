@@ -1,14 +1,9 @@
 <h3> todo #<%= params[:id]%></></h3>
-<input type="checkbox">
-    <h2 class="showtitle">Go to the gym</h2>
-    <a href="#">Edit</a>
-    <a href="#">Delete</a>
-    <a href="index.html">Go back...</a>
     <div class="card">
   <input type="checkbox" name=""/>
   <h2><%= @todo.description %></h2>
   <span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
   <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a></a>
   <a href="#" class="button" id="delete-todo-button">Delete</a>
-  <a href="index" class="simple-link">Go back...</a>
+  <a href="/" class="simple-link">Go back...</a>
 </div>

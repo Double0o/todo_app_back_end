@@ -1,14 +1,16 @@
 <h1> <h1>Hulk's todo list</h1>
      <img src="https://static.giantbomb.com/uploads/scale_small/11/110502/2064679-hulk.png"
-        width="50" height="55"></img>
+        width="125" height="155"></img>
      <p1>Destroy all of your work for the day.</p1>
     <ul>
      <% @todos.each do |todo| %>
         <li class="list-item"> <input type="checkbox">
         <a href="show/<%= todo.id %>"><%= todo.description %></a>
         <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+        
 </li>
         
             
     <% end %>
+    <a href="/todo/new">Add Todo</a>
 </ul> </h1>
