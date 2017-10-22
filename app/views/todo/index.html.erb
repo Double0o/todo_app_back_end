@@ -1,16 +1,14 @@
-<h1> <h1>Green owl todo list</h1>
-     <img src="https://i.pinimg.com/236x/3b/4d/d2/3b4dd2fcc9d1a66b3ea9b8c467a1cbad--cute-owl-clipart.jpg"
-        width="50" height="45"></img>
-     <p1>The best to do list out.</p1>
+<h1> <h1>Hulk's todo list</h1>
+     <img src="https://static.giantbomb.com/uploads/scale_small/11/110502/2064679-hulk.png"
+        width="50" height="55"></img>
+     <p1>Destroy all of your work for the day.</p1>
     <ul>
+     <% @todos.each do |todo| %>
         <li class="list-item"> <input type="checkbox">
-        <a href="show/1">walk the dog</a></a>
-        </li>
+        <a href="show/<%= todo.id %>"><%= todo.description %></a>
+        <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+</li>
+        
             
-    <li class="list-item"><input type="checkbox">
-     <a href="show/2"> do the dishes</a></li>
-  <li class="list-item"><input type="checkbox">
-   <a href="show/3">get the mail</a></li>
-<li class="list-item"><input type="checkbox">
- <a href="show/4"> have fun</a></li> 
+    <% end %>
 </ul> </h1>
